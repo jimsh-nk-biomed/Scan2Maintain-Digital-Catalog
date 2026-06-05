@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMARTBIO Biomedical Asset Management Software</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+.hero{
+    background:linear-gradient(135deg,#081c6b,#0052cc,#0099ff);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.logo{
+    width:220px;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:white;
+    color:#0052cc;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#0052cc;
+    margin-bottom:50px;
+    font-size:2rem;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-card h3{
+    color:#0052cc;
+    margin-bottom:10px;
+}
+
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.media-grid img,
+.media-grid video{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.benefits{
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.benefits ul{
+    list-style:none;
+}
+
+.benefits li{
+    padding:12px 0;
+    font-size:18px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat-box{
+    background:#0052cc;
+    color:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat-box h2{
+    font-size:2.5rem;
+}
+
+.testimonial{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact{
+    background:#0052cc;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+.contact button{
+    background:white;
+    color:#0052cc;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    background:#001b5c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+#responseMsg{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .media-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <img src="Smart-Bio.jpeg" alt="SMARTBIO Logo" class="logo">
+
+    <h1>SMARTBIO Asset Management Software</h1>
+
+    <p>
+        Complete Biomedical Asset Management Solution for Hospitals,
+        Medical Colleges, Diagnostic Centres and Healthcare Organizations.
+        Manage Assets, PMS, Calibration, Breakdowns, Service Reports,
+        QR Codes and Email Alerts from a Single Platform.
+    </p>
+
+    <a href="#contact" class="btn">Book Free Demo</a>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Key Features</h2>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>📱 QR Asset Tracking</h3>
+            <p>Instant access to asset history by scanning QR codes.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔧 PMS Management</h3>
+            <p>Automated preventive maintenance scheduling and tracking.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📏 Calibration Tracking</h3>
+            <p>Track due dates and calibration certificates.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📂 Documentation Management</h3>
+            <p>Access equipment manuals and documents instantly.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📧 Email Alerts</h3>
+            <p>Automatic PMS and calibration reminders.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔐 Secure Dashboard</h3>
+            <p>User login with role-based access.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Software Preview</h2>
+
+    <div class="media-grid">
+
+        <img src="dashboard.jpg" alt="Dashboard Screenshot">
+
+        <video controls>
+            <source src="demo1.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="demo2.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="demo3.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="benefits">
+
+        <h2 class="section-title">Why SMARTBIO?</h2>
+
+        <ul>
+            <li>✅ Reduce Equipment Downtime</li>
+            <li>✅ Never Miss PMS Schedules</li>
+            <li>✅ Never Miss Calibration Due Dates</li>
+            <li>✅ Improve NABH & NMC Compliance</li>
+            <li>✅ Centralized Asset Database</li>
+            <li>✅ QR Based Equipment Identification</li>
+            <li>✅ Audit Ready Documentation</li>
+            <li>✅ Email Notification System</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Performance Benefits</h2>
+
+    <div class="stats">
+
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Asset Visibility</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>95%</h2>
+            <p>Less Manual Work</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Data Availability</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>Real-Time</h2>
+            <p>Notifications</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Customer Feedback</h2>
+
+    <div class="testimonial">
+
+        <p>
+            "SMARTBIO has transformed the way we manage biomedical equipment.
+            Maintenance tracking, calibration monitoring and audit preparation
+            have become significantly easier."
+        </p>
+
+        <br>
+
+        <strong>Hospital Biomedical Engineering Department</strong>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Request a Free Demo</h2>
+
+    <br>
+
+    <form id="enquiryForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+        <input type="text" id="hospital" placeholder="Hospital / Organization">
+
+        <textarea id="message" rows="5" placeholder="Message"></textarea>
+
+        <button type="submit">Request Demo</button>
+
+    </form>
+
+    <div id="responseMsg"></div>
+
+</section>
+
+<footer>
+
+    © 2026 SMARTBIO Biomedical Engineering | Biomedical Asset Management Software
+
+</footer>
+
+<div style="text-align:center;padding:25px;background:#f4f7fc;">
+
+    <h3>Contact SMARTBIO</h3>
+
+    <p>📞 Mobile: +91 9831462013</p>
+
+    <p>📧 Email: smartbio2004@gmail.com</p>
+
+</div>
+
+<a href="https://wa.me/919831462013" target="_blank" class="whatsapp">
+💬
+</a>
+
+<script>
+
+document.getElementById("enquiryForm")
+.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const data = {
+
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        mobile: document.getElementById("mobile").value,
+        hospital: document.getElementById("hospital").value,
+        message: document.getElementById("message").value
+
+    };
+
+    document.getElementById("responseMsg").innerHTML =
+    "Submitting enquiry...";
+
+    try {
+
+        await fetch(
+        "https://script.google.com/macros/s/AKfycbxYCgKN6BPF8A6Cb9CjPyEgRom0MzubdER-4lC3TthTihqtYnD9rd_bYndDapmiBR3dcg/exec",
+        {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
+        });
+
+        document.getElementById("responseMsg").innerHTML =
+        "✅ Thank you! Your enquiry has been submitted successfully.";
+
+        document.getElementById("enquiryForm").reset();
+
+    } catch(error){
+
+        document.getElementById("responseMsg").innerHTML =
+        "❌ Submission failed. Please contact us directly.";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
