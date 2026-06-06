@@ -106,18 +106,32 @@ body{
 
 .media-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
 }
 
 .media-grid img,
 .media-grid video{
     width:100%;
+    height:250px;
+    object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
-.benefits{
+.media-grid img:hover,
+.media-grid video:hover{
+    transform:scale(1.03);
+}
+  
+  .benefits{
     background:white;
     border-radius:15px;
     padding:40px;
@@ -298,7 +312,17 @@ footer{
 
     <div class="media-grid">
 
-        <img src="dashboard.jpg" alt="Dashboard Screenshot">
+        <!-- Images -->
+
+        <img src="dashboard1.jpg" alt="Dashboard 1">
+
+        <img src="dashboard2.jpg" alt="Dashboard 2">
+
+        <img src="dashboard3.jpg" alt="Dashboard 3">
+
+        <img src="dashboard4.jpg" alt="Dashboard 4">
+
+        <!-- Videos -->
 
         <video controls>
             <source src="demo1.mp4" type="video/mp4">
@@ -310,6 +334,10 @@ footer{
 
         <video controls>
             <source src="demo3.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="demo4.mp4" type="video/mp4">
         </video>
 
     </div>
